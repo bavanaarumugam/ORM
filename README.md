@@ -41,7 +41,7 @@ from django.db import models
 from django.contrib import admin
 class vehicle_DB(models.Model):
     vehicle_name=models.CharField(max_length=10)
-    vehicle_ID=models.AutoField
+    vehicle_ID=models.AutoField(primary_key=True)
     Brand=models.CharField(max_length=10)
     Colour=models.CharField(max_length=10)
     Year=models.IntegerField()
@@ -61,7 +61,7 @@ admin.site.register(vehicle_DB,vehicle_DBAdmin)
 
 
 ## OUTPUT
-![alt text](image.png)
+![alt text](image-1.png)
 
 
 ## RESULT
